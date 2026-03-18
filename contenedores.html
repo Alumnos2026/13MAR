@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores con Grid</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+
+        .grid-padre {
+            display: grid;
+            gap: 20px; 
+
+            grid-template-columns: 1fr;
+        }
+
+        .hijo {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 2px solid #3498db;
+        }
+
+
+        @media (min-width: 768px) {
+            .grid-padre {
+
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mis Contenedores</h1>
+
+    <div class="grid-padre">
+        <div class="hijo">Contenedor 1</div>
+        <div class="hijo">Contenedor 2</div>
+        <div class="hijo">Contenedor 3</div>
+        <div class="hijo">Contenedor 4</div>
+        <div class="hijo">Contenedor 5</div>
+        <div class="hijo">Contenedor 6</div>
+    </div>
+
+</body>
+</html>
