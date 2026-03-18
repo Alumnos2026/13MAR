@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5.3 + Iconos (Corregido)</title>
+    
+    <!-- Bootstrap 5.3 CSS (URL Completa) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Bootstrap Icons (URL Completa) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net">
+</head>
+<body>
+
+    <!-- Navbar con Iconos -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-code-slash me-2"></i>DevTools</a>
+            <div class="d-flex border-start ps-3">
+                <a href="#" class="text-white me-3"><i class="bi bi-github fs-5"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-twitter-x fs-5"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Tarjeta con Icono Grande -->
+            <div class="col-md-4 text-center">
+                <div class="card shadow-sm p-4 h-100 border-0 bg-body-tertiary">
+                    <div class="text-primary mb-3">
+                        <i class="bi bi-cloud-check" style="font-size: 3rem;"></i>
+                    </div>
+                    <h3>Servicios Cloud</h3>
+                    <p class="text-muted small">Almacenamiento seguro con respaldo automático en la nube.</p>
+                    <button class="btn btn-primary">
+                        <i class="bi bi-info-circle me-2"></i>Ver más
+                    </button>
+                </div>
+            </div>
+
+            <!-- Botones con Iconos y Estados -->
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4 h-100">
+                    <h3 class="h5">Acciones Rápidas</h3>
+                    <div class="d-grid gap-3 mt-3">
+                        <button class="btn btn-outline-success">
+                            <i class="bi bi-cart-plus me-2"></i>Añadir al Carrito
+                        </button>
+                        <button class="btn btn-outline-danger">
+                            <i class="bi bi-trash3 me-2"></i>Eliminar Todo
+                        </button>
+                        <button class="btn btn-dark">
+                            <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista con Iconos de Estado -->
+            <div class="col-md-4">
+                <ul class="list-group shadow-sm">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-check-circle-fill text-success me-2"></i>Base de Datos</span>
+                        <span class="badge bg-success rounded-pill">OK</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>Servidor API</span>
+                        <span class="badge bg-warning rounded-pill">Lento</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-danger">
+                        <span class="text-danger fw-bold"><i class="bi bi-x-circle-fill me-2"></i>Seguridad SSL</span>
+                        <span class="badge bg-danger rounded-pill">Error</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- JS de Bootstrap (URL Completa) -->
+    <script src="https://cdnjs.cloudflare.com"></script>
+</body>
+</html>

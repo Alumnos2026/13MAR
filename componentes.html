@@ -80,17 +80,13 @@
         <p class="mb-0 text-secondary">&copy; 2024 Mi Sitio Web - Hecho con Bootstrap 5.3</p>
     </footer>
 
-    <!-- 3. Bootstrap 5.3 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net"></script>
-
-    <!-- 4. Tu JavaScript -->
+  
     <script>
-        // Función de saludo
+
         function saludar() {
             alert('¡Hola! JavaScript está funcionando correctamente.');
         }
 
-        // Lógica para cambiar entre modo claro y oscuro
         const btnTema = document.getElementById('btnTema');
         const html = document.documentElement;
 
@@ -100,7 +96,7 @@
             
             html.setAttribute('data-bs-theme', nuevoTema);
             
-            // Cambiar icono del botón
+
             btnTema.innerHTML = nuevoTema === 'dark' 
                 ? '<i class="bi bi-sun-fill"></i>' 
                 : '<i class="bi bi-moon-fill"></i>';
